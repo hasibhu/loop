@@ -24,9 +24,14 @@ const dailyItems = [
     "iv. Then practice the full module.",
     "v. Join the support session, If you have any problem."];
 
-    let n = dailyItems.length-1;
+let makeList = [];
+// from length -1 has been removed to show the mistake for the group member
+let n = dailyItems.length;
     while (n >= 0) {
         console.log(dailyItems[n]);
+        makeList.push(dailyItems[n]);
         n--;
+
     }
-    console.log ("Done");
+console.log ("Done");
+console.log(makeList);
